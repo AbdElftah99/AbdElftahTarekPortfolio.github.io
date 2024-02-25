@@ -3604,8 +3604,93 @@ input, select, textarea {
 		}
 
 /* Nav */
+/* Main Nav*/
 
-	#nav {
+
+
+
+#nav {
+    color: #ffffff;
+    display: flex;
+    justify-content: flex-start; /* Align items to the right */
+    align-items: center; /* Align items vertically */
+    position: fixed; /* Position the navigation bar fixed at the top */
+    top: 10px;
+    right: 0;
+    padding: 0 20px; /* Adjust padding as needed */
+    z-index: 1000; /* Ensure the navigation bar is above other content */
+}
+
+#nav ul.links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Display links in a row */
+}
+
+#nav ul.links li {
+    margin-left: 15px; /* Adjust spacing between links */
+}
+
+#nav ul.links li a {
+    color: inherit; /* Inherit text color */
+    text-decoration: none; /* Remove underline */
+    font-size: 18px; /* Adjust font size */
+    transition: color 0.2s ease; /* Smooth transition for color */
+}
+
+#nav ul.links li a:hover {
+    color: #18bfef; /* Change color on hover */
+}
+
+#nav ul.icons li {
+    margin-left: 10px; /* Adjust spacing between icons */
+}
+
+#nav ul.icons li a.icon:before {
+    color: inherit; /* Inherit icon color */
+}
+
+#nav ul.icons.alt li a.icon:hover:before {
+    color: #18bfef; /* Change icon color on hover */
+}
+
+#nav {
+    color: #ffffff;
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+    align-items: center; /* Align items vertically */
+    position: fixed; /* Position the navigation bar fixed at the top */
+    top: 20px; /* Adjust distance from the top */
+    right: 20px; /* Adjust distance from the right */
+    padding: 10px 20px; /* Adjust padding as needed */
+    z-index: 1000; /* Ensure the navigation bar is above other content */
+}
+
+#nav ul.links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Display links in a row */
+}
+
+#nav ul.links li {
+    margin-left: 15px; /* Adjust spacing between links */
+}
+
+#nav ul.links li a {
+    color: inherit; /* Inherit text color */
+    text-decoration: none; /* Remove underline */
+    font-size: 18px; /* Adjust font size */
+    transition: color 0.2s ease; /* Smooth transition for color */
+}
+
+#nav ul.links li a:hover {
+    color: #18bfef; /* Change color on hover */
+}
+
+/* Second Nav*/
+	#nav2 {
 		color: #ffffff;
 		display: -moz-flex;
 		display: -webkit-flex;
@@ -3627,58 +3712,59 @@ input, select, textarea {
 		z-index: 2;
 	}
 
-		#nav ul.divided li {
+	
+		#nav2 ul.divided li {
 			border-top-color: #ffffff;
 		}
 
-		#nav ul.icons li a.icon:hover:before {
+		#nav2 ul.icons li a.icon:hover:before {
 			color: #18bfef;
 		}
 
-		#nav ul.icons.alt li .icon:before {
+		#nav2 ul.icons.alt li .icon:before {
 			box-shadow: inset 0 0 0 2px #ffffff;
 		}
 
-		#nav ul.icons.alt li a.icon:hover:before {
+		#nav2 ul.icons.alt li a.icon:hover:before {
 			box-shadow: inset 0 0 0 2px #18bfef;
 		}
 
-		#nav input, #nav select, #nav textarea {
+		#nav2 input, #nav select, #nav textarea {
 			color: #ffffff;
 		}
 
-		#nav a {
+		#nav2 a {
 			color: #ffffff;
 			border-bottom-color: rgba(255, 255, 255, 0.5);
 		}
 
-			#nav a:hover {
+			#nav2 a:hover {
 				border-bottom-color: transparent;
 				color: #18bfef !important;
 			}
 
-		#nav strong, #nav b {
+		#nav2 strong, #nav b {
 			color: #ffffff;
 		}
 
-		#nav h1, #nav h2, #nav h3, #nav h4, #nav h5, #nav h6 {
+		#nav2 h1, #nav h2, #nav h3, #nav h4, #nav h5, #nav h6 {
 			color: #ffffff;
 		}
 
-		#nav blockquote {
+		#nav2 blockquote {
 			border-left-color: #ffffff;
 		}
 
-		#nav code {
+		#nav2 code {
 			background: rgba(255, 255, 255, 0.075);
 			border-color: #ffffff;
 		}
 
-		#nav hr {
+		#nav2 hr {
 			border-bottom-color: #ffffff;
 		}
 
-		#nav ul.links {
+		#nav2 ul.links {
 			display: -moz-flex;
 			display: -webkit-flex;
 			display: -ms-flex;
@@ -3700,12 +3786,12 @@ input, select, textarea {
 			text-transform: uppercase;
 		}
 
-			#nav ul.links li {
+			#nav2 ul.links li {
 				display: block;
 				padding-left: 0;
 			}
 
-				#nav ul.links li a {
+				#nav2 ul.links li a {
 					-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 					-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 					-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
@@ -3716,24 +3802,24 @@ input, select, textarea {
 					padding: 0 2rem;
 				}
 
-					#nav ul.links li a:hover {
+					#nav2 ul.links li a:hover {
 						color: inherit !important;
 						background-color: rgba(255, 255, 255, 0.1);
 					}
 
-				#nav ul.links li.active {
+				#nav2 ul.links li.active {
 					background-color: #ffffff;
 				}
 
-					#nav ul.links li.active a {
+					#nav2 ul.links li.active a {
 						color: #1e252d;
 					}
 
-						#nav ul.links li.active a:hover {
+						#nav2 ul.links li.active a:hover {
 							color: #18bfef !important;
 						}
 
-		#nav ul.icons {
+		#nav2 ul.icons {
 			-moz-flex-grow: 0;
 			-webkit-flex-grow: 0;
 			-ms-flex-grow: 0;
@@ -3747,7 +3833,7 @@ input, select, textarea {
 
 		@media screen and (max-width: 980px) {
 
-			#nav {
+			#nav2 {
 				display: none;
 			}
 
