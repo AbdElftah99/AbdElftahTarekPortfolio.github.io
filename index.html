@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Abdelfattah Tarek — AEC Software Engineer</title>
-<meta name="description" content="Abdelfattah Tarek — Sr. AEC Software Engineer and APS & ACC specialist: Autodesk Platform Services integrations on Azure, Revit, Civil 3D, AutoCAD and Navisworks add-ins, and AI for BIM.">
+<title>Abdelfattah Tarek — AEC Software &amp; AI Engineer</title>
+<meta name="description" content="Abdelfattah Tarek — AEC Software Engineer and AI &amp; Automation Engineer: LLM agents, AI assistants and MCP integrations with Azure AI Foundry, Autodesk APS &amp; ACC apps on Azure, and Revit, Civil 3D and Navisworks add-ins.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -14,31 +14,34 @@
 </script>
 <style>
 :root{
-  --bg:#f7f5f1; --surface:rgba(255,255,255,.78); --solid:#fff; --soft:#f0ece5; --line:rgba(60,45,30,.09);
-  --text:#1f2328; --text2:#575f68; --text3:#8f959c;
-  --accent:#e2603d; --accent2:#0f8b7d; --ink:#fff;
-  --glow1:rgba(226,96,61,.14); --glow2:rgba(15,139,125,.12);
-  --shadow:0 2px 8px rgba(60,40,20,.05),0 12px 32px -16px rgba(60,40,20,.18);
+  --bg:#f5efe4; --surface:rgba(255,252,246,.85); --solid:#fffcf6; --soft:#ece3d4; --line:rgba(80,58,36,.13);
+  --text:#2c241e; --text2:#5f554b; --text3:#94897c;
+  --accent:#a9533a; --accent2:#4f6b53; --ink:#fffcf6;
+  --glow1:rgba(182,90,60,.08); --glow2:rgba(95,125,99,.08);
+  --viz-work:#a9533a; --viz-train:#2f69ad; --viz-bar:#4f6b53; --viz-seq:#4f6b53; --grid:rgba(80,58,36,.12);
+  --shadow:0 1px 2px rgba(60,40,20,.06),0 10px 28px -16px rgba(60,40,20,.22);
   --mono:"JetBrains Mono",ui-monospace,Consolas,monospace;
 }
 :root[data-theme="dark"]{
-  --bg:#131518; --surface:rgba(31,34,39,.78); --solid:#1f2227; --soft:#262a30; --line:rgba(255,255,255,.08);
-  --text:#eeeae4; --text2:#aeb4bb; --text3:#7b828a;
-  --accent:#f27b57; --accent2:#2ab5a4; --ink:#131518;
-  --glow1:rgba(242,123,87,.12); --glow2:rgba(42,181,164,.1);
+  --bg:#1d1a17; --surface:rgba(40,35,31,.85); --solid:#28231f; --soft:#332d27; --line:rgba(255,236,214,.09);
+  --text:#efe6da; --text2:#bcb1a3; --text3:#8b8175;
+  --accent:#d98b6b; --accent2:#9cb89f; --ink:#1d1a17;
+  --glow1:rgba(217,139,107,.07); --glow2:rgba(156,184,159,.06);
+  --viz-work:#c96a45; --viz-train:#4a86d0; --viz-bar:#9cb89f; --viz-seq:#9cb89f; --grid:rgba(255,236,214,.1);
   --shadow:0 2px 8px rgba(0,0,0,.3),0 12px 32px -16px rgba(0,0,0,.7);
 }
 @media (prefers-color-scheme:dark){
   :root:not([data-theme="light"]){
-    --bg:#131518; --surface:rgba(31,34,39,.78); --solid:#1f2227; --soft:#262a30; --line:rgba(255,255,255,.08);
-    --text:#eeeae4; --text2:#aeb4bb; --text3:#7b828a;
-    --accent:#f27b57; --accent2:#2ab5a4; --ink:#131518;
-    --glow1:rgba(242,123,87,.12); --glow2:rgba(42,181,164,.1);
+    --bg:#1d1a17; --surface:rgba(40,35,31,.85); --solid:#28231f; --soft:#332d27; --line:rgba(255,236,214,.09);
+    --text:#efe6da; --text2:#bcb1a3; --text3:#8b8175;
+    --accent:#d98b6b; --accent2:#9cb89f; --ink:#1d1a17;
+    --glow1:rgba(217,139,107,.07); --glow2:rgba(156,184,159,.06);
+  --viz-work:#c96a45; --viz-train:#4a86d0; --viz-bar:#9cb89f; --viz-seq:#9cb89f; --grid:rgba(255,236,214,.1);
     --shadow:0 2px 8px rgba(0,0,0,.3),0 12px 32px -16px rgba(0,0,0,.7);
   }
 }
 *{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;scroll-padding-top:76px}
+html{scroll-behavior:smooth;scroll-padding-top:128px}
 body{font:16px/1.65 Inter,system-ui,sans-serif;background:var(--bg);color:var(--text);transition:background .3s,color .3s;
   background-image:radial-gradient(900px 500px at 85% -10%,var(--glow1),transparent 70%),radial-gradient(700px 500px at -10% 30%,var(--glow2),transparent 70%);background-attachment:fixed}
 a{color:inherit;text-decoration:none}
@@ -51,13 +54,13 @@ button{font:inherit;color:inherit;cursor:pointer;border:0;background:none}
 .glass{background:var(--surface);backdrop-filter:blur(14px);border:1px solid var(--line);border-radius:20px;box-shadow:var(--shadow)}
 
 /* header */
-.progress{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,var(--accent),var(--accent2));z-index:30}
+.progress{position:fixed;top:0;left:0;height:3px;background:var(--accent);z-index:30}
 header{position:sticky;top:0;z-index:20;transition:background .3s,box-shadow .3s}
 header.scrolled{background:color-mix(in srgb,var(--bg) 82%,transparent);backdrop-filter:blur(12px);box-shadow:0 1px 0 var(--line)}
 .nav{display:flex;align-items:center;justify-content:space-between;height:68px;gap:16px}
-.brand{font-family:var(--mono);font-weight:600;font-size:15px;color:var(--accent2);white-space:nowrap}
+.brand{font-weight:800;font-size:17px;letter-spacing:-.02em;white-space:nowrap}
 @media (max-width:420px){.brand{font-size:12.5px}}
-.brand span{color:var(--text3)}
+.brand span{color:var(--accent)}
 .nav nav{display:flex;align-items:center;gap:2px;font-size:14.5px}
 .nav nav a{padding:7px 13px;border-radius:999px;color:var(--text2);transition:color .2s,background .2s}
 .nav nav a:hover{color:var(--text)}
@@ -75,8 +78,8 @@ header.scrolled{background:color-mix(in srgb,var(--bg) 82%,transparent);backdrop
 .pill i{width:8px;height:8px;border-radius:50%;background:var(--accent2);animation:pulse 2s infinite}
 @keyframes pulse{0%{box-shadow:0 0 0 0 color-mix(in srgb,var(--accent2) 50%,transparent)}70%{box-shadow:0 0 0 8px transparent}}
 .hero h1{font-size:clamp(46px,8vw,92px);font-weight:900;line-height:.98;letter-spacing:-.045em;margin-bottom:22px}
-.hero h1 span{background:linear-gradient(100deg,var(--accent),#f2a65a);-webkit-background-clip:text;background-clip:text;color:transparent}
-.typed{font-family:var(--mono);font-size:clamp(15px,2vw,19px);color:var(--accent2);margin-bottom:22px;min-height:1.6em}
+.hero h1 span{color:var(--accent)}
+.typed{font-family:var(--mono);font-size:clamp(15px,2vw,19px);color:var(--accent2);margin-bottom:20px;min-height:1.6em}
 .caret{display:inline-block;width:2px;height:1.1em;background:var(--accent2);vertical-align:-3px;margin-left:2px;animation:blink 1s steps(1) infinite}
 @keyframes blink{50%{opacity:0}}
 .lead{color:var(--text2);font-size:17.5px;max-width:600px;margin-bottom:30px}
@@ -84,18 +87,18 @@ header.scrolled{background:color-mix(in srgb,var(--bg) 82%,transparent);backdrop
 .row{display:flex;flex-wrap:wrap;gap:12px}
 .btn{display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border-radius:999px;border:1px solid var(--line);background:var(--solid);font-weight:600;font-size:15px;transition:transform .2s,box-shadow .2s}
 .btn:hover{transform:translateY(-2px);box-shadow:var(--shadow)}
-.btn.main{background:linear-gradient(100deg,var(--accent),#ea8048);border-color:transparent;color:#fff;box-shadow:0 10px 24px -10px var(--accent)}
+.btn.main{background:var(--accent);border-color:var(--accent);color:var(--ink)}
 .btn svg{width:17px;height:17px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 
 .profile{padding:26px}
 .profile-top{display:flex;align-items:center;gap:14px;margin-bottom:20px}
-.avatar{width:58px;height:58px;border-radius:18px;background:linear-gradient(135deg,var(--accent),var(--accent2));display:grid;place-items:center;color:#fff;font-weight:800;font-size:21px;flex:none}
+.avatar{width:58px;height:58px;border-radius:18px;background:var(--accent);display:grid;place-items:center;color:var(--ink);font-weight:800;font-size:21px;flex:none}
 .profile-top b{display:block;font-size:16.5px}
 .profile-top span{font-size:13.5px;color:var(--text2)}
 .tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
 .tile{border-radius:14px;padding:12px 8px;text-align:center;background:color-mix(in srgb,var(--c) 10%,transparent);border:1px solid color-mix(in srgb,var(--c) 22%,transparent);transition:transform .2s}
 .tile:hover{transform:translateY(-3px)}
-.tile b{display:block;font-family:var(--mono);font-size:13px;color:var(--c)}
+.tile b{display:block;font-family:var(--mono);font-size:13px;color:color-mix(in srgb,var(--c) 72%,var(--text))}
 .tile span{font-size:11.5px;color:var(--text3)}
 .now{margin-top:18px;padding-top:16px;border-top:1px dashed var(--line);font-size:13.5px;color:var(--text2)}
 .now b{color:var(--text)}
@@ -107,12 +110,118 @@ header.scrolled{background:color-mix(in srgb,var(--bg) 82%,transparent);backdrop
 
 /* sections */
 section{padding:72px 0}
-.kicker{font-family:var(--mono);font-size:12.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--accent2);display:flex;align-items:center;gap:10px;margin-bottom:10px}
-.kicker::before{content:"";width:24px;height:2px;background:currentColor}
+.kicker{font-size:15px;font-weight:600;color:var(--accent2);margin-bottom:6px}
 h2{font-size:clamp(34px,5vw,50px);font-weight:900;letter-spacing:-.035em;line-height:1.05;margin-bottom:10px}
 .sub{color:var(--text2);max-width:620px;margin-bottom:34px}
 .chips{display:flex;flex-wrap:wrap;gap:7px;list-style:none}
 .chips li{font-family:var(--mono);font-size:12px;padding:4px 10px;border-radius:8px;background:var(--soft);color:var(--text2)}
+
+/* expertise sub-menu */
+.subnav{position:sticky;top:68px;z-index:15;display:flex;justify-content:center;padding:10px 0;pointer-events:none}
+.subnav div{display:flex;gap:4px;padding:5px;border-radius:999px;background:var(--surface);backdrop-filter:blur(14px);border:1px solid var(--line);box-shadow:var(--shadow);pointer-events:auto;max-width:100%;overflow-x:auto}
+.subnav a{padding:7px 15px;border-radius:999px;font-size:14px;font-weight:500;color:var(--text2);white-space:nowrap;transition:background .2s,color .2s}
+.subnav a:hover{color:var(--text)}
+.subnav a.active{background:var(--accent);color:#fff}
+
+/* about */
+.about{display:grid;grid-template-columns:1.3fr .7fr;gap:40px;align-items:start}
+.about-text p{color:var(--text2);font-size:17px;margin-bottom:16px;max-width:640px}
+.about-text a{color:var(--accent);font-weight:600}
+.journey{list-style:none;border-left:2px solid var(--line);padding-left:22px}
+.journey li{position:relative;padding-bottom:18px}
+.journey li::before{content:"";position:absolute;left:-29px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--bg);border:2px solid var(--accent)}
+.journey li:last-child::before{background:var(--accent)}
+.journey b{display:block;font-size:14px;color:var(--accent)}
+.journey span{color:var(--text2);font-size:15px}
+
+/* AI */
+.ai-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:18px}
+.ai-card{text-align:left;padding:24px;position:relative;overflow:hidden;transition:transform .25s,box-shadow .25s}
+.ai-card:hover{transform:translateY(-5px);box-shadow:0 22px 40px -20px var(--accent)}
+.ai-num{font-family:var(--mono);font-size:13px;font-weight:600;color:var(--accent)}
+.ai-card h3{font-size:19px;font-weight:800;letter-spacing:-.015em;margin:8px 0 8px}
+.ai-card p{color:var(--text2);font-size:14.5px;margin-bottom:14px}
+.ai-card.devops .ai-num{color:var(--accent2)}
+.ai-card.devops:hover{box-shadow:0 22px 40px -20px var(--accent2)}
+.flow{display:flex;flex-wrap:wrap;justify-content:center;gap:10px 0;margin-top:22px;padding:18px 20px}
+.step{display:flex;align-items:center;gap:0}
+.step b{font-family:var(--mono);font-size:13px;color:var(--accent2);background:var(--glow2);padding:6px 12px;border-radius:10px}
+.step span{font-size:12.5px;color:var(--text3);margin-left:8px}
+.step i{font-style:normal;color:var(--text3);margin:0 14px}
+
+/* architecture */
+.arch{display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:center}
+.layers{display:flex;flex-direction:column;align-items:center;gap:8px}
+.layer{width:var(--w);padding:14px 18px;border-radius:16px;text-align:center;background:color-mix(in srgb,var(--c) 12%,var(--solid));border:1px solid color-mix(in srgb,var(--c) 28%,transparent);transition:transform .2s,box-shadow .2s,background .2s}
+.layer:hover{transform:scale(1.02)}
+.layer.on{background:var(--c);color:#fff;box-shadow:0 14px 28px -14px var(--c)}
+.layer b{display:block;font-size:15.5px}
+.layer span{font-family:var(--mono);font-size:12px;opacity:.75}
+.dep{font-family:var(--mono);font-size:12px;color:var(--text3);margin-top:4px}
+.layer-info{padding:26px 28px;border-left:4px solid var(--c)}
+.layer-info h3{font-size:22px;font-weight:800;color:color-mix(in srgb,var(--c) 72%,var(--text));margin-bottom:8px}
+.layer-info p{color:var(--text2);margin-bottom:16px}
+.cqrs{display:grid;gap:12px;margin-top:22px}
+.cqrs .flow{margin-top:0;justify-content:flex-start;align-items:center}
+.flow-label{font-weight:800;font-size:14px;width:90px;flex:none}
+.patterns{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px;margin-top:22px}
+.pattern{padding:16px 18px;transition:transform .2s,border-color .2s}
+.pattern:hover{transform:translateY(-3px);border-color:var(--accent2)}
+.pattern b{display:block;font-size:15px;margin-bottom:2px}
+.pattern span{font-size:13.5px;color:var(--text2)}
+
+/* data visualization */
+.viz{padding:20px 22px;margin-bottom:22px}
+.viz-head{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:6px 16px;margin-bottom:14px}
+.viz-head h3{font-size:16px;font-weight:700}
+.viz-head span,.viz-note{font-size:13px;color:var(--text3)}
+.viz-note{margin-top:10px}
+.legend{display:flex;gap:16px;font-size:13px;color:var(--text2)}
+.key::before{content:"";display:inline-block;width:12px;height:12px;border-radius:3px;background:var(--k);margin-right:7px;vertical-align:-1px}
+.viz-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.viz-grid .viz{margin-bottom:22px}
+.viz-table{margin-top:12px;font-size:13px;color:var(--text2)}
+.viz-table summary{cursor:pointer;color:var(--text3);width:max-content}
+.viz-table table{width:100%;border-collapse:collapse;margin-top:8px;font-variant-numeric:tabular-nums}
+.viz-table th,.viz-table td{text-align:left;padding:5px 8px;border-bottom:1px solid var(--line)}
+.viz-table th{font-weight:600;color:var(--text)}
+.viz-tip{position:fixed;z-index:60;pointer-events:none;background:var(--solid);border:1px solid var(--line);box-shadow:var(--shadow);border-radius:10px;padding:8px 12px;font-size:13px;max-width:260px;transform:translate(12px,-50%)}
+.viz-tip b{display:block;font-size:15px;color:var(--text)}
+.viz-tip span{display:block;color:var(--text2)}
+/* timeline */
+.tl{position:relative}
+.tl-axis,.tl-row{display:grid;grid-template-columns:150px 1fr;align-items:center}
+.tl-axis{height:22px;font-size:12px;color:var(--text3);font-variant-numeric:tabular-nums}
+.tl-axis div{position:relative;height:100%}
+.tl-axis div span{position:absolute;transform:translateX(-50%);top:2px}
+.tl-axis .tl-today{color:var(--text);font-weight:600}
+.tl-row{height:34px}
+.tl-label{font-size:13.5px;color:var(--text2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;padding-right:10px}
+.tl-track{position:relative;height:100%}
+.tl-grid{position:absolute;top:0;bottom:0;width:1px;background:var(--grid)}
+.tl-grid.tl-today{background:var(--text3)}
+.tl-bar{position:absolute;top:50%;height:18px;transform:translateY(-50%);background:var(--k);border-radius:4px;min-width:6px;transition:filter .15s}
+.tl-bar.tl-open{border-radius:4px 0 0 4px}
+.tl-bar:hover,.tl-bar:focus-visible{filter:brightness(1.12)}
+/* bars */
+.bars{display:grid;gap:6px}
+.bar-row{display:grid;grid-template-columns:96px 1fr;align-items:center;gap:10px;text-align:left;padding:2px 0;border-radius:6px}
+.bar-label{font-size:13.5px;color:var(--text2)}
+.bar-track{position:relative;height:24px;display:flex;align-items:center}
+.bar-track i{display:block;height:20px;background:var(--viz-bar);border-radius:0 4px 4px 0;transition:opacity .2s,filter .15s}
+.bar-track b{font-size:13px;font-weight:600;color:var(--text);margin-left:8px;font-variant-numeric:tabular-nums}
+.bar-row.dim i{opacity:.3}
+.bar-row.on .bar-label{color:var(--text);font-weight:600}
+.bar-row:hover i,.bar-row:focus-visible i{filter:brightness(1.12)}
+/* heatmap */
+.heat{display:grid;gap:3px;align-items:center}
+.heat-col{font-size:12px;color:var(--text3);text-align:center;padding-bottom:4px}
+.heat-row{font-size:13.5px;color:var(--text2);padding-right:8px}
+.cell{height:28px;border-radius:4px;font-size:13px;font-weight:600;font-variant-numeric:tabular-nums;transition:filter .15s}
+.cell:hover,.cell:focus-visible{filter:brightness(1.1);outline:2px solid var(--text3);outline-offset:1px}
+.cell.zero{background:var(--soft);cursor:default;opacity:.6}
+.scale{display:flex;align-items:center;gap:8px;margin-top:12px;font-size:12px;color:var(--text3)}
+.scale i{display:block;width:120px;height:8px;border-radius:4px;background:linear-gradient(90deg,color-mix(in oklab,var(--viz-seq) 20%,var(--solid)),var(--viz-seq))}
 
 /* experience */
 .exp{display:grid;grid-template-columns:270px 1fr;gap:22px;align-items:start}
@@ -126,7 +235,7 @@ h2{font-size:clamp(34px,5vw,50px);font-weight:900;letter-spacing:-.035em;line-he
 .job{padding:28px 30px;border-top:4px solid var(--c)}
 .job-head{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:16px}
 .job h3{font-size:22px;font-weight:800;letter-spacing:-.02em}
-.job .co{color:var(--c);font-weight:600}
+.job .co{color:color-mix(in srgb,var(--c) 72%,var(--text));font-weight:600}
 .badges{display:flex;flex-direction:column;align-items:flex-end;gap:6px}
 .badge{font-family:var(--mono);font-size:12px;padding:4px 10px;border-radius:999px;background:var(--soft);color:var(--text2)}
 .badge.live{background:var(--glow2);color:var(--accent2)}
@@ -148,16 +257,20 @@ h2{font-size:clamp(34px,5vw,50px);font-weight:900;letter-spacing:-.035em;line-he
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:20px;position:relative}
 .project{display:flex;flex-direction:column;text-align:left;overflow:hidden;border-top:4px solid var(--c);transition:transform .25s,box-shadow .25s}
 .project:hover{transform:translateY(-5px);box-shadow:0 22px 40px -20px color-mix(in srgb,var(--c) 55%,transparent)}
-.thumb{aspect-ratio:16/9;overflow:hidden;background:var(--soft)}
+.thumb{aspect-ratio:16/9;overflow:hidden;background:var(--soft);position:relative}
 .thumb img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+/* odd-shaped or small screenshots: show them whole, never upscaled, over a blurred copy */
+.thumb.contain{display:grid;place-items:center}
+.thumb.contain::before{content:"";position:absolute;inset:-24px;background:var(--src) center/cover;filter:blur(22px) saturate(.7);opacity:.35}
+.thumb.contain img{position:relative;width:auto;height:auto;max-width:calc(100% - 24px);max-height:calc(100% - 24px);object-fit:contain;border-radius:6px;box-shadow:var(--shadow)}
 .project:hover .thumb img{transform:scale(1.05)}
 .project-body{padding:18px 20px 20px;display:flex;flex-direction:column;flex:1;width:100%}
 .meta{display:flex;align-items:center;gap:8px;margin-bottom:10px;flex-wrap:wrap}
-.tag{font-size:11.5px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:3px 10px;border-radius:999px;color:var(--c);background:color-mix(in srgb,var(--c) 12%,transparent)}
+.tag{font-size:11.5px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:3px 10px;border-radius:999px;color:color-mix(in srgb,var(--c) 72%,var(--text));background:color-mix(in srgb,var(--c) 12%,transparent)}
 .org{font-size:12.5px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:.04em}
 .project h3{font-size:18.5px;font-weight:800;letter-spacing:-.015em;margin-bottom:6px}
 .project p{color:var(--text2);font-size:14.5px;flex:1}
-.more{margin-top:14px;font-size:14px;font-weight:600;color:var(--c)}
+.more{margin-top:14px;font-size:14px;font-weight:600;color:color-mix(in srgb,var(--c) 72%,var(--text))}
 .list-move,.list-enter-active,.list-leave-active{transition:all .35s ease}
 .list-enter-from,.list-leave-to{opacity:0;transform:scale(.96)}
 .list-leave-active{position:absolute;visibility:hidden}
@@ -166,7 +279,8 @@ h2{font-size:clamp(34px,5vw,50px);font-weight:900;letter-spacing:-.035em;line-he
 /* modal */
 .overlay{position:fixed;inset:0;background:rgba(20,16,12,.5);backdrop-filter:blur(6px);z-index:40;display:grid;place-items:center;padding:20px}
 .modal{max-width:660px;width:100%;max-height:90vh;overflow:auto;position:relative;background:var(--solid);border-top:5px solid var(--c)}
-.modal img{width:100%;background:var(--soft)}
+.media{display:grid;place-items:center;background:var(--soft);padding:14px}
+.media img{width:auto;max-width:100%;max-height:440px;border-radius:8px}
 .modal-body{padding:26px 28px 28px}
 .modal h3{font-size:28px;font-weight:900;letter-spacing:-.03em;margin:8px 0 10px}
 .modal p{color:var(--text2);margin-bottom:16px}
@@ -178,11 +292,11 @@ h2{font-size:clamp(34px,5vw,50px);font-weight:900;letter-spacing:-.035em;line-he
 
 /* skills */
 .skills{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:18px}
-.skill{padding:22px 24px;transition:transform .25s,border-color .25s}
+.skill{padding:22px 24px;border-top:3px solid var(--c);display:flex;flex-direction:column;transition:transform .25s,border-color .25s}
+.skill p{font-size:14.5px;color:var(--text2);margin-bottom:14px}
 .skill:hover{transform:translateY(-3px);border-color:color-mix(in srgb,var(--c) 40%,transparent)}
-.skill h3{display:flex;align-items:center;gap:10px;font-family:var(--mono);font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--c);margin-bottom:14px}
-.skill h3 i{width:28px;height:28px;border-radius:9px;background:color-mix(in srgb,var(--c) 14%,transparent);display:grid;place-items:center;font-style:normal;font-size:14px}
-.skill .chips li{background:color-mix(in srgb,var(--c) 9%,transparent);color:var(--c);border:1px solid color-mix(in srgb,var(--c) 20%,transparent);transition:background .2s,color .2s}
+.skill h3{font-size:17px;font-weight:800;letter-spacing:-.01em;margin-bottom:6px}
+.skill .chips li{background:color-mix(in srgb,var(--c) 9%,transparent);color:color-mix(in srgb,var(--c) 72%,var(--text));border:1px solid color-mix(in srgb,var(--c) 20%,transparent);transition:background .2s,color .2s}
 .skill .chips li:hover{background:var(--c);color:#fff}
 
 /* education */
@@ -207,7 +321,7 @@ footer{text-align:center;color:var(--text3);font-size:13.5px;padding:36px 0}
 .reveal.in{opacity:1;transform:none}
 
 @media (max-width:900px){
-  .hero-grid,.exp,.edu{grid-template-columns:1fr}
+  .hero-grid,.exp,.edu,.arch,.about,.viz-grid{grid-template-columns:1fr}
   .tabs{flex-direction:row;overflow-x:auto;padding-bottom:4px}
   .tab{flex:0 0 auto}
   .stats{grid-template-columns:repeat(2,1fr)}
@@ -217,6 +331,10 @@ footer{text-align:center;color:var(--text3);font-size:13.5px;padding:36px 0}
   .grid,.skills{grid-template-columns:1fr}
   .job{padding:22px 20px}
   .search{flex:1 1 100%}
+  .flow-label{width:100%;margin-bottom:4px}
+  .subnav a{padding:6px 10px;font-size:12.5px}
+  .tl-axis,.tl-row{grid-template-columns:96px 1fr}
+  .tl-label{font-size:12px}
   .badges{align-items:flex-start}
 }
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.reveal{opacity:1;transform:none}}
@@ -228,10 +346,10 @@ footer{text-align:center;color:var(--text3);font-size:13.5px;padding:36px 0}
 
   <header :class="{scrolled: progress > 0}">
     <div class="wrap nav">
-      <a href="#home" class="brand">&lt;Abdelfattah_Tarek <span>/&gt;</span></a>
+      <a href="#home" class="brand">Abdelfattah Tarek<span>.</span></a>
       <div class="right">
         <nav>
-          <a v-for="s in sections" :href="'#' + s.id" :class="{active: active === s.id}">{{ s.label }}</a>
+          <a v-for="s in sections" :href="'#' + s.id" :class="{active: active === s.id || s.group?.includes(active)}">{{ s.label }}</a>
           <a href="#contact" class="cta">Contact</a>
         </nav>
         <button class="icon-btn" @click="toggleTheme" :aria-label="dark ? 'Switch to light mode' : 'Switch to dark mode'">
@@ -248,10 +366,11 @@ footer{text-align:center;color:var(--text3);font-size:13.5px;padding:36px 0}
         <div>
           <div class="pill"><i></i>Available for new opportunities</div>
           <h1>Abdelfattah<br><span>Tarek.</span></h1>
-          <p class="typed">&gt; {{ typed }}<span class="caret"></span></p>
-          <p class="lead">Civil engineer turned software engineer. I build <b>APS &amp; ACC integrations</b> on <b>Azure</b>, add-ins for <b>Revit, Civil 3D, AutoCAD and Navisworks</b>, and <b>AI agents</b> that turn days of BIM work into minutes.</p>
+          <p class="typed" aria-label="AEC software engineer, AI and automation">&gt; {{ typed }}<span class="caret"></span></p>
+          <p class="lead">I studied civil engineering, then spent the last four years writing software for the people who design and build. That means <b>Revit, Civil 3D and Navisworks add-ins</b>, web apps on <b>Autodesk Platform Services</b>, and lately <b>AI agents</b> that take the repetitive parts of BIM work off engineers' plates.</p>
           <div class="row">
-            <a class="btn main" href="#projects"><svg viewBox="0 0 24 24"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg>View projects</a>
+            <a class="btn main" href="#ai"><svg viewBox="0 0 24 24"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg>See my AI work</a>
+            <a class="btn" href="#projects">All projects</a>
             <button class="btn" @click="copyEmail"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>Copy email</button>
           </div>
         </div>
@@ -259,12 +378,12 @@ footer{text-align:center;color:var(--text3);font-size:13.5px;padding:36px 0}
         <div class="glass profile reveal">
           <div class="profile-top">
             <div class="avatar">AT</div>
-            <div><b>Abdelfattah Tarek</b><span>Sr. AEC Software Engineer · Cairo, Egypt</span></div>
+            <div><b>Abdelfattah Tarek</b><span>AEC Software &amp; AI Engineer · Cairo, Egypt</span></div>
           </div>
           <div class="tiles">
             <div class="tile" v-for="t in platforms" :style="{'--c': t.c}"><b>{{ t.name }}</b><span>{{ t.note }}</span></div>
           </div>
-          <p class="now">Currently at <b>Group AMANA</b> &amp; <b>Kemet</b>, building for real construction projects.</p>
+          <p class="now">Right now I'm building the AI tooling for the R&amp;D team at <b>Group AMANA</b>, and Autodesk tools for <b>Kemet</b>'s clients.</p>
         </div>
       </div>
 
@@ -273,10 +392,121 @@ footer{text-align:center;color:var(--text3);font-size:13.5px;padding:36px 0}
       </div>
     </section>
 
+    <section id="about">
+      <p class="kicker reveal">About me</p>
+      <h2 class="reveal">From site drawings to software</h2>
+      <div class="about">
+        <div class="about-text reveal">
+          <p>I didn't start out as a programmer. I trained as a civil engineer at Zagazig University, and like most engineers I spent a lot of time on work a computer could do: repetitive modelling, checking and documentation.</p>
+          <p>My first fix was a handful of Dynamo scripts for Civil 3D. They worked, so I learned C# to go further, joined the BIM Automation track at ITI, and shipped my first Revit add-in. Since then it's been add-ins, APS web apps, and now AI agents for BIM. Alongside that I work on computational design and the geometry algorithms underneath it.</p>
+          <p>What I care about is simple: tools engineers actually want to use, code the next developer can read, and shipping instead of polishing forever. I also share what I learn on my <a href="https://www.youtube.com/@abdelftahtarek1999/videos" target="_blank" rel="noopener">YouTube channel</a>.</p>
+        </div>
+        <ol class="journey reveal">
+          <li v-for="j in journey"><b>{{ j.year }}</b><span>{{ j.text }}</span></li>
+        </ol>
+      </div>
+    </section>
+
+    <div class="expertise">
+    <nav class="subnav" aria-label="Expertise"><div>
+      <a v-for="x in expertise" :href="'#' + x.id" :class="{active: active === x.id}">{{ x.label }}</a>
+    </div></nav>
+
+    <section id="ai">
+      <p class="kicker reveal">AI &amp; Automation</p>
+      <h2 class="reveal">Putting AI to work on BIM</h2>
+      <p class="sub reveal">Most of my time right now goes into AI: agents and assistants that live inside Revit and APS and handle the tedious parts for people. Here's what I've shipped. Click a card for details.</p>
+      <div class="ai-grid">
+        <button class="glass ai-card reveal" v-for="(a, i) in aiWork" @click="open = projects.find(p => p.title === a.project)">
+          <h3>{{ a.title }}</h3>
+          <p>{{ a.desc }}</p>
+          <ul class="chips"><li v-for="t in a.tech">{{ t }}</li></ul>
+        </button>
+      </div>
+      <div class="glass flow reveal" aria-label="How my AI tools work">
+        <div v-for="(s, i) in flow" class="step"><b>{{ s.name }}</b><span>{{ s.note }}</span><i v-if="i < flow.length - 1">→</i></div>
+      </div>
+    </section>
+
+    <section id="devops">
+      <p class="kicker reveal">DevOps &amp; Delivery</p>
+      <h2 class="reveal">Shipping it, not just writing it</h2>
+      <p class="sub reveal">I set up and look after the pipelines and cloud resources my apps run on, so releases are boring in the best way.</p>
+      <div class="ai-grid">
+        <div class="glass ai-card devops reveal" v-for="(d, i) in devops">
+          <h3>{{ d.title }}</h3>
+          <p>{{ d.desc }}</p>
+          <ul class="chips"><li v-for="t in d.tech">{{ t }}</li></ul>
+        </div>
+      </div>
+      <div class="glass flow reveal" aria-label="My release pipeline">
+        <div v-for="(s, i) in pipeline" class="step"><b>{{ s.name }}</b><span>{{ s.note }}</span><i v-if="i < pipeline.length - 1">→</i></div>
+      </div>
+    </section>
+
+    <section id="architecture">
+      <p class="kicker reveal">Backend Architecture</p>
+      <h2 class="reveal">How I structure my code</h2>
+      <p class="sub reveal">Most of my .NET work follows Clean Architecture with CQRS. It keeps add-ins and APIs easy to test, and easy for the next developer to pick up. Click a layer to see what goes where.</p>
+      <div class="arch reveal">
+        <div class="layers" role="tablist" aria-label="Clean Architecture layers">
+          <button v-for="(l, i) in layers" class="layer" role="tab" :aria-selected="layer === i" :class="{on: layer === i}" :style="{'--c': l.c, '--w': (100 - i * 12) + '%'}" @click="layer = i">
+            <b>{{ l.name }}</b><span>{{ l.short }}</span>
+          </button>
+          <p class="dep">↓ dependencies point inward ↓</p>
+        </div>
+        <Transition name="fade" mode="out-in">
+          <div class="glass layer-info" :key="layer" :style="{'--c': layers[layer].c}" role="tabpanel">
+            <h3>{{ layers[layer].name }}</h3>
+            <p>{{ layers[layer].desc }}</p>
+            <ul class="chips"><li v-for="t in layers[layer].items">{{ t }}</li></ul>
+          </div>
+        </Transition>
+      </div>
+
+      <div class="cqrs reveal">
+        <div class="glass flow" v-for="f in cqrs" :aria-label="f.label">
+          <span class="flow-label">{{ f.label }}</span>
+          <div v-for="(s, i) in f.steps" class="step"><b>{{ s.name }}</b><span>{{ s.note }}</span><i v-if="i < f.steps.length - 1">→</i></div>
+        </div>
+      </div>
+
+      <div class="patterns">
+        <div class="glass pattern reveal" v-for="p in patterns"><b>{{ p.name }}</b><span>{{ p.desc }}</span></div>
+      </div>
+    </section>
+
+    </div>
+
     <section id="experience">
       <p class="kicker reveal">Career</p>
       <h2 class="reveal">Experience</h2>
-      <p class="sub reveal">From construction sites to cloud platforms. Pick a company to see what I did there.</p>
+      <p class="sub reveal">Where I've worked and what I did there. Pick a company.</p>
+      <div class="glass viz reveal">
+        <div class="viz-head">
+          <h3>Career timeline</h3>
+          <div class="legend"><span class="key" style="--k:var(--viz-work)">Work</span><span class="key" style="--k:var(--viz-train)">Training</span></div>
+        </div>
+        <div class="tl">
+          <div class="tl-axis"><span></span><div><span v-for="y in tlYears" :style="{left: tlPos(y) + '%'}">{{ y.getFullYear() }}</span><span class="tl-today" :style="{left: tlPos(NOW) + '%'}">Now</span></div></div>
+          <div class="tl-row" v-for="r in timeline">
+            <span class="tl-label" :title="r.org">{{ r.org }}</span>
+            <div class="tl-track">
+              <i v-for="y in tlYears" class="tl-grid" :style="{left: tlPos(y) + '%'}"></i>
+              <i class="tl-grid tl-today" :style="{left: tlPos(NOW) + '%'}"></i>
+              <button class="tl-bar" :class="{'tl-open': !r.e}"
+                :style="{left: tlPos(r.s) + '%', width: (tlPos(r.e || NOW) - tlPos(r.s)) + '%', '--k': r.kind === 'Work' ? 'var(--viz-work)' : 'var(--viz-train)'}"
+                :aria-label="`${r.org}: ${r.role}, ${tlRange(r)}`"
+                @pointermove="tip($event, tlLen(r), [r.role, r.org, tlRange(r)])" @focus="tip($event, tlLen(r), [r.role, r.org, tlRange(r)])"
+                @pointerleave="untip" @blur="untip" @click="r.job != null && (job = r.job)"></button>
+            </div>
+          </div>
+        </div>
+        <details class="viz-table"><summary>Show as a table</summary>
+          <table><tr><th>Organisation</th><th>Role</th><th>Type</th><th>Dates</th><th>Length</th></tr>
+            <tr v-for="r in timeline"><td>{{ r.org }}</td><td>{{ r.role }}</td><td>{{ r.kind }}</td><td>{{ tlRange(r) }}</td><td>{{ tlLen(r) }}</td></tr></table>
+        </details>
+      </div>
       <div class="exp reveal">
         <div class="tabs" role="tablist">
           <button class="tab" v-for="(j, i) in jobs" role="tab" :aria-selected="job === i" :class="{on: job === i}" @click="job = i">
@@ -303,7 +533,39 @@ footer{text-align:center;color:var(--text3);font-size:13.5px;padding:36px 0}
     <section id="projects">
       <p class="kicker reveal">Work</p>
       <h2 class="reveal">Projects</h2>
-      <p class="sub reveal">Production tools for real projects, plus a few side projects. Click a card for details and demos.</p>
+      <p class="sub reveal">Tools I built for real projects, plus a few side projects. Click any card for details and demos.</p>
+      <div class="viz-grid reveal">
+        <div class="glass viz">
+          <div class="viz-head"><h3>Projects by platform</h3><span>click a bar to filter</span></div>
+          <div class="bars">
+            <button v-for="b in platformCounts" class="bar-row" :class="{dim: filter !== 'All' && filter !== b.name, on: filter === b.name}"
+              :aria-label="`${b.name}: ${b.n} projects. Filter projects`" :aria-pressed="filter === b.name"
+              @click="toggleFilter(b.name)" @pointermove="tip($event, b.n + ' projects', [b.name])" @focus="tip($event, b.n + ' projects', [b.name])" @pointerleave="untip" @blur="untip">
+              <span class="bar-label">{{ b.name }}</span>
+              <span class="bar-track"><i :style="{width: b.n / maxCount * 85 + '%'}"></i><b>{{ b.n }}</b></span>
+            </button>
+          </div>
+          <p class="viz-note">A project can count toward more than one platform.</p>
+        </div>
+        <div class="glass viz">
+          <div class="viz-head"><h3>Where the work was done</h3><span>projects per platform and company</span></div>
+          <div class="heat" :style="{gridTemplateColumns: `96px repeat(${ORGS.length}, 1fr)`}">
+            <span></span><span class="heat-col" v-for="o in ORGS">{{ o }}</span>
+            <template v-for="row in matrix">
+              <span class="heat-row">{{ row.name }}</span>
+              <button v-for="c in row.cells" class="cell" :class="{zero: !c.n}" :style="heatStyle(c.n)" :tabindex="c.n ? 0 : -1"
+                :aria-label="`${c.n} ${row.name} projects at ${c.org}`"
+                @click="c.n && toggleFilter(row.name)" @pointermove="tip($event, c.n + (c.n === 1 ? ' project' : ' projects'), [row.name + ' · ' + c.org])"
+                @focus="tip($event, c.n + ' projects', [row.name + ' · ' + c.org])" @pointerleave="untip" @blur="untip">{{ c.n || '' }}</button>
+            </template>
+          </div>
+          <div class="scale"><span>1</span><i></i><span>{{ maxCell }} projects</span></div>
+          <details class="viz-table"><summary>Show as a table</summary>
+            <table><tr><th>Platform</th><th v-for="o in ORGS">{{ o }}</th><th>Total</th></tr>
+              <tr v-for="(row, k) in matrix"><td>{{ row.name }}</td><td v-for="c in row.cells">{{ c.n }}</td><td>{{ platformCounts[k].n }}</td></tr></table>
+          </details>
+        </div>
+      </div>
       <div class="toolbar reveal">
         <div class="filters">
           <button v-for="f in filters" :class="{on: filter === f}" @click="filter = f">{{ f }}<sup>{{ count(f) }}</sup></button>
@@ -312,7 +574,7 @@ footer{text-align:center;color:var(--text3);font-size:13.5px;padding:36px 0}
       </div>
       <TransitionGroup name="list" tag="div" class="grid">
         <button class="glass project" v-for="p in shown" :key="p.title" @click="open = p" :style="{'--c': color(p.tags[0])}">
-          <div class="thumb" v-if="p.img"><img :src="'images/' + p.img" :alt="p.title" loading="lazy"></div>
+          <div class="thumb" v-if="p.img" :style="bgVar(p.img)"><img :src="'images/' + p.img" :alt="p.title" loading="lazy" @load="fit"></div>
           <div class="project-body">
             <div class="meta"><span class="tag">{{ p.tags[0] }}</span><span class="org">{{ p.org }}</span></div>
             <h3>{{ p.title }}</h3>
@@ -325,21 +587,22 @@ footer{text-align:center;color:var(--text3);font-size:13.5px;padding:36px 0}
     </section>
 
     <section id="skills">
-      <p class="kicker reveal">Toolbox</p>
+      <p class="kicker reveal">Capabilities</p>
       <h2 class="reveal">Skills &amp; Technologies</h2>
-      <p class="sub reveal">From Autodesk desktop APIs to the cloud and AI.</p>
+      <p class="sub reveal">Eight areas I work across, from geometry and BIM APIs to cloud, architecture and AI, with the tools I use in each.</p>
       <div class="skills">
-        <div class="glass skill reveal" v-for="g in skills" :style="{'--c': g.c}">
-          <h3><i>{{ g.icon }}</i>{{ g.name }}</h3>
+        <article class="glass skill reveal" v-for="g in skills" :style="{'--c': g.c}">
+          <h3>{{ g.name }}</h3>
+          <p>{{ g.desc }}</p>
           <ul class="chips"><li v-for="s in g.items">{{ s }}</li></ul>
-        </div>
+        </article>
       </div>
     </section>
 
     <section id="education">
-      <p class="kicker reveal">Learning</p>
+      <p class="kicker reveal">Background</p>
       <h2 class="reveal">Education &amp; Training</h2>
-      <p class="sub reveal">A civil engineering degree, then focused software training.</p>
+      <p class="sub reveal">Civil engineering first, then software.</p>
       <div class="edu">
         <div class="glass reveal" v-for="e in education">
           <span class="logo" :style="{'--c': e.c}">{{ e.icon }}</span>
@@ -351,8 +614,8 @@ footer{text-align:center;color:var(--text3);font-size:13.5px;padding:36px 0}
     <section id="contact">
       <div class="glass contact reveal">
         <p class="kicker" style="justify-content:center">Contact</p>
-        <h2>Let's build something <span>great.</span></h2>
-        <p class="sub">Open to AEC software, APS and AI-for-construction roles, remote or on-site. Based in Cairo and happy to relocate.</p>
+        <h2>Let's <span>talk.</span></h2>
+        <p class="sub">If you're working on AEC software, APS or AI for construction, I'd love to hear about it. I'm based in Cairo, open to remote work, and happy to relocate.</p>
         <div class="row">
           <a class="btn main" href="mailto:abdelftahsalah748@gmail.com">Email me</a>
           <button class="btn" @click="copyEmail">Copy email</button>
@@ -363,13 +626,13 @@ footer{text-align:center;color:var(--text3);font-size:13.5px;padding:36px 0}
     </section>
   </main>
 
-  <footer>© {{ year }} Abdelfattah Tarek · Cairo, Egypt · Built with Vue</footer>
+  <footer>© {{ year }} Abdelfattah Tarek · Made in Cairo</footer>
 
   <Transition name="pop">
     <div class="overlay" v-if="open" @click.self="open = null">
       <div class="glass modal" role="dialog" aria-modal="true" :aria-label="open.title" :style="{'--c': color(open.tags[0])}">
         <button class="icon-btn" @click="open = null" aria-label="Close"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
-        <img v-if="open.img" :src="'images/' + open.img" :alt="open.title">
+        <div class="media" v-if="open.img"><img :src="'images/' + open.img" :alt="open.title"></div>
         <div class="modal-body">
           <div class="meta"><span class="tag" v-for="t in open.tags" :style="{'--c': color(t)}">{{ t }}</span><span class="org">{{ open.org }}</span></div>
           <h3>{{ open.title }}</h3>
@@ -382,6 +645,10 @@ footer{text-align:center;color:var(--text3);font-size:13.5px;padding:36px 0}
     </div>
   </Transition>
 
+  <div class="viz-tip" v-if="tipState" :style="{left: tipState.x + 'px', top: tipState.y + 'px'}" role="status">
+    <b>{{ tipState.title }}</b><span v-for="l in tipState.lines">{{ l }}</span>
+  </div>
+
   <Transition name="fade"><div class="toast" v-if="toast" role="status">{{ toast }}</div></Transition>
 </div>
 
@@ -389,22 +656,87 @@ footer{text-align:center;color:var(--text3);font-size:13.5px;padding:36px 0}
 <script>
 const drive = id => `https://drive.google.com/file/d/${id}/view`;
 const EMAIL = 'abdelftahsalah748@gmail.com';
-const TAG_COLORS = { 'APS & ACC': '#0f8b7d', Web: '#6b5bd2', AI: '#e2603d', Revit: '#2f6fd6', 'Civil 3D': '#3f8f3f', AutoCAD: '#c94141', Navisworks: '#c98a12' };
+const TAG_COLORS = { 'APS & ACC': '#5f7d63', Web: '#56708a', AI: '#b65a3c', Revit: '#3f5f7f', 'Civil 3D': '#6f7b3a', AutoCAD: '#a14a3e', Navisworks: '#b0822f' };
 
 Vue.createApp({
   data: () => ({
     year: new Date().getFullYear(),
-    dark: false, progress: 0, active: '', typed: '', job: 0,
+    dark: false, progress: 0, active: '', job: 0, typed: '',
+    roles: ['AEC Software Engineer', 'AI & Automation Engineer', 'APS & ACC Specialist', 'Revit, Civil 3D & Navisworks APIs', 'Computational Design & Geometry', 'Full Stack .NET Developer', 'Clean Architecture & CQRS'],
     filter: 'All', query: '', open: null, toast: '',
-    roles: ['APS & ACC Specialist', 'Sr. AEC Software Engineer', 'Revit & Civil 3D API Developer', 'Building AI agents for BIM', 'Full Stack .NET Developer'],
+    aiWork: [
+      { title: 'R&D AI infrastructure', project: 'AI Skills & Agents Library', desc: 'Reusable AI skills and LLM-powered agents that the whole R&D team builds on.', tech: ['AI Skills', 'LLM Agents', 'Azure AI Foundry'] },
+      { title: 'AMANA BimOps', project: 'AMANA BimOps', desc: 'AI agents wired into Revit and APS through MCP, to query and automate BIM models.', tech: ['MCP', 'Revit API', 'APS'] },
+      { title: 'AI Bid Package Compiler', project: 'AI Bid Package Compiler', desc: 'Compiles bid packages with AI, in production on Azure.', tech: ['LLM', 'ASP.NET Core', 'Azure'] },
+      { title: 'AI cable routing in Revit', project: 'Tech Plus Electrical Designer', desc: 'Azure AI Foundry suggests the best electrical cable routes inside a Revit add-in.', tech: ['Azure AI Foundry', 'Revit API', 'C#'] },
+    ],
+    flow: [
+      { name: 'Revit · APS · ACC', note: 'BIM data' }, { name: 'MCP', note: 'tools' },
+      { name: 'LLM agents', note: 'Azure AI Foundry' }, { name: 'Automated workflow', note: 'on Azure' },
+    ],
+    devops: [
+      { title: 'CI/CD pipelines', desc: 'Multi-stage build, test and release pipelines on Azure DevOps, with a clear branching strategy from development to production.', tech: ['Azure DevOps', 'Branching Strategy', 'GitHub Actions'] },
+      { title: 'Azure hosting', desc: 'Production apps on App Service, Azure Functions and Storage, set up to be scalable, secure and highly available.', tech: ['App Service', 'Azure Functions', 'Azure Storage'] },
+      { title: 'Containers & services', desc: 'Dockerized apps backed by caching, background jobs and message queues.', tech: ['Docker', 'Redis', 'Hangfire', 'RabbitMQ'] },
+    ],
+    pipeline: [
+      { name: 'Commit', note: 'branch & PR' }, { name: 'Build', note: '.NET · Node' },
+      { name: 'Test', note: 'unit tests' }, { name: 'Release', note: 'dev → prod' }, { name: 'Azure', note: 'live' },
+    ],
+    layer: 2,
+    layers: [
+      { name: 'Presentation', short: 'API · UI · add-ins', c: '#56708a', desc: 'Thin entry points. They turn HTTP requests or add-in button clicks into commands and queries, and nothing more.', items: ['ASP.NET Core Web API', 'MVC', 'Angular', 'React', 'Vue.js', 'APS Viewer', 'WPF + MVVM', 'Revit / Civil 3D ribbons'] },
+      { name: 'Infrastructure', short: 'data · cloud · APIs', c: '#3f5f7f', desc: 'Implements the interfaces the application defines: databases, caching, queues, and external services like APS, ACC and Azure AI.', items: ['EF Core', 'SQL Server', 'Redis', 'RabbitMQ', 'Hangfire', 'APS / ACC clients', 'Azure AI Foundry', 'Azure Storage'] },
+      { name: 'Application', short: 'use cases · CQRS', c: '#5f7d63', desc: 'The use cases. Commands change state, queries read it, each with its own handler, validation and DTOs. Defines interfaces, never implementations.', items: ['Commands', 'Queries', 'Handlers', 'Validation', 'DTOs', 'Interfaces (ports)'] },
+      { name: 'Domain', short: 'entities · rules', c: '#b65a3c', desc: 'The core business model, with zero dependencies on frameworks, databases or Autodesk APIs. Easy to unit test.', items: ['Entities', 'Value Objects', 'Business Rules', 'Domain Exceptions'] },
+    ],
+    cqrs: [
+      { label: 'Command', steps: [{ name: 'Request', note: 'API / add-in' }, { name: 'Command', note: 'validated' }, { name: 'Handler', note: 'domain rules' }, { name: 'EF Core', note: 'SQL Server' }] },
+      { label: 'Query', steps: [{ name: 'Request', note: 'API / add-in' }, { name: 'Query', note: 'read-only' }, { name: 'Handler', note: 'DTO projection' }, { name: 'Redis / SQL', note: 'fast reads' }] },
+    ],
+    patterns: [
+      { name: 'Clean Architecture', desc: 'Layers with inward dependencies, so frameworks stay replaceable.' },
+      { name: 'CQRS', desc: 'Separate write and read paths, each simple and optimized.' },
+      { name: 'Repository & Unit of Work', desc: 'Data access behind interfaces, with one transaction per use case.' },
+      { name: 'Dependency Injection', desc: 'Loose coupling, wired up in one composition root.' },
+      { name: 'MVVM', desc: 'Testable WPF and add-in UIs with data binding and commands.' },
+      { name: 'SOLID & Design Patterns', desc: 'Strategy, Factory, Observer and friends, where they earn their place.' },
+      { name: 'Messaging & Background Jobs', desc: 'RabbitMQ for async work and Hangfire for scheduled jobs.' },
+      { name: 'Caching', desc: 'Redis in front of hot reads to keep APIs fast.' },
+    ],
+    NOW: new Date(),
+    tipState: null,
+    ORGS: ['AMANA', 'Kemet', 'Axelerate', 'Other'],
+    timeline: [
+      { org: 'ITI', role: 'BIM Automation Development track', kind: 'Training', s: new Date(2023, 2), e: new Date(2023, 7) },
+      { org: 'Kemet Corporation', role: 'Sr. Software Engineer – AEC Developer', kind: 'Work', s: new Date(2023, 9), e: null, job: 1 },
+      { org: 'Route Academy', role: 'Full Stack .NET + Angular', kind: 'Training', s: new Date(2024, 2), e: new Date(2025, 3) },
+      { org: 'Axelerate Engineering', role: 'AEC Software Engineer (part time)', kind: 'Work', s: new Date(2024, 5), e: new Date(2025, 5), job: 2 },
+      { org: 'Upskilling EG', role: 'Backend .NET Job Simulation', kind: 'Training', s: new Date(2025, 4), e: new Date(2025, 8) },
+      { org: 'Group AMANA', role: 'Sr. AEC Software Engineer / AI Specialist', kind: 'Work', s: new Date(2026, 3), e: null, job: 0 },
+    ],
+    journey: [
+      { year: '2017', text: 'Started civil engineering at Zagazig University' },
+      { year: '2022', text: 'Graduated as a civil engineer' },
+      { year: '2023', text: 'Dynamo scripts for Civil 3D, then the ITI BIM Automation track and my first Revit add-in' },
+      { year: '2023', text: 'Joined Kemet as an AEC developer' },
+      { year: '2024', text: 'Part-time Revit tooling for Axelerate Engineering' },
+      { year: '2026', text: 'Joined Group AMANA to build AI for the R&D team' },
+    ],
+    expertise: [
+      { id: 'ai', label: 'AI & Automation' }, { id: 'devops', label: 'DevOps' },
+      { id: 'architecture', label: 'Architecture' },
+    ],
     sections: [
+      { id: 'about', label: 'About' },
+      { id: 'ai', label: 'Expertise', group: ['ai', 'devops', 'architecture'] },
       { id: 'experience', label: 'Experience' }, { id: 'projects', label: 'Projects' },
-      { id: 'skills', label: 'Skills' }, { id: 'education', label: 'Education' },
+      { id: 'skills', label: 'Skills' },
     ],
     platforms: [
-      { name: 'APS', note: 'Forge', c: '#0f8b7d' }, { name: 'ACC', note: 'Cloud', c: '#0f8b7d' },
-      { name: 'Revit', note: 'API', c: '#2f6fd6' }, { name: 'Civil 3D', note: 'API', c: '#3f8f3f' },
-      { name: 'Navis', note: 'API', c: '#c98a12' }, { name: 'Azure', note: 'AI · DevOps', c: '#e2603d' },
+      { name: 'APS', note: 'Viewer · APIs', c: '#5f7d63' }, { name: 'ACC', note: 'Cloud', c: '#5f7d63' },
+      { name: 'Revit', note: 'API', c: '#3f5f7f' }, { name: 'Civil 3D', note: 'API', c: '#6f7b3a' },
+      { name: 'AI Agents', note: 'LLM · MCP', c: '#b65a3c' }, { name: 'Azure', note: 'AI Foundry', c: '#b65a3c' },
     ],
     stats: [
       { value: 4, suffix: '+', label: 'Years experience', shown: 0 },
@@ -412,7 +744,7 @@ Vue.createApp({
       { value: 5, suffix: '', label: 'Autodesk platforms', shown: 0 },
       { value: 3, suffix: '', label: 'Engineering companies', shown: 0 },
     ],
-    filters: ['All', 'APS & ACC', 'Web', 'AI', 'Revit', 'Civil 3D', 'AutoCAD', 'Navisworks'],
+    filters: ['All', 'AI', 'APS & ACC', 'Web', 'Revit', 'Civil 3D', 'AutoCAD', 'Navisworks'],
     links: [
       { name: 'LinkedIn', url: 'https://www.linkedin.com/in/abdelftah-tarek-484100194/' },
       { name: 'GitHub', url: 'https://github.com/AbdElftah99' },
@@ -420,27 +752,30 @@ Vue.createApp({
     ],
     jobs: [
       {
-        role: 'Sr. AEC Software Engineer', company: 'Group AMANA', short: 'Sr. AEC Software Engineer', when: '04/2026 – Present · Remote', current: true, c: '#e2603d',
+        role: 'Sr. AEC Software Engineer / AI Specialist', company: 'Group AMANA', short: 'AEC Software & AI Specialist', when: '04/2026 – Present · Remote', current: true, c: '#b65a3c',
         points: [
+          'Build the AI infrastructure for the R&D unit: reusable AI skills and LLM-powered agents the team adopts.',
+          'Integrate Azure AI Foundry into BIM workflows, delivering LLM agents, AI assistants and MCP integrations for Revit and APS.',
           'Lead full-stack web apps with ASP.NET Core, Angular and Vue.js, integrated with Autodesk Platform Services.',
-          'Deploy production apps on Azure (App Service, Functions, Storage) and own CI/CD on Azure DevOps.',
+          'Deploy production apps on Azure (App Service, Functions, Storage), keeping them scalable, secure and highly available.',
+          'Own CI/CD on Azure DevOps: branching strategy and multi-stage build, test and release pipelines from development to production.',
           'Architect BIM automation tools for Revit, Civil 3D and Navisworks across multi-disciplinary workflows.',
-          'Integrate Azure AI Foundry into BIM: LLM-powered agents, assistants and reusable AI skills for the R&D unit.',
         ],
-        tech: ['ASP.NET Core', 'Angular', 'Vue.js', 'APS', 'Azure', 'Azure DevOps', 'Azure AI Foundry', 'MCP'],
+        tech: ['Azure AI Foundry', 'LLM Agents', 'MCP', 'AI Skills', 'ASP.NET Core', 'Angular', 'Vue.js', 'APS', 'Azure DevOps'],
       },
       {
-        role: 'Sr. Software Engineer – AEC Developer', company: 'Kemet Corporation', short: 'Sr. Software Engineer', when: '10/2023 – Present · Remote', current: true, c: '#0f8b7d',
+        role: 'Sr. Software Engineer – AEC Developer', company: 'Kemet Corporation', short: 'Sr. Software Engineer', when: '10/2023 – Present · Remote', current: true, c: '#5f7d63',
         points: [
+          'Integrate Azure AI Foundry into Autodesk add-ins, such as AI-suggested electrical cable routes in Revit.',
           'Build full-stack web apps with ASP.NET Core and React on Autodesk Platform Services and ACC APIs (Docs, Issues, RFIs, Forms, Admin).',
           'Architect and maintain add-ins for Revit, Civil 3D, AutoCAD and Navisworks using C#, WPF and DevExpress.',
           'Lead delivery of AEC software for major clients such as ROSHN and El-Sewedy.',
           'Run code reviews enforcing coding standards, MVVM architecture, performance and maintainability.',
         ],
-        tech: ['C#', 'WPF', 'DevExpress', 'MVVM', 'React', 'ACC', 'Revit API', 'Civil 3D API'],
+        tech: ['Azure AI Foundry', 'C#', 'WPF', 'DevExpress', 'MVVM', 'React', 'ACC', 'Revit API', 'Civil 3D API'],
       },
       {
-        role: 'AEC Software Engineer', company: 'Axelerate Engineering', short: 'Part time · 2024 – 2025', when: '06/2024 – 06/2025 · Part time', c: '#6b5bd2',
+        role: 'AEC Software Engineer', company: 'Axelerate Engineering', short: 'Part time · 2024 – 2025', when: '06/2024 – 06/2025 · Part time', c: '#56708a',
         points: [
           'Developed Revit add-ins in C#, .NET and WPF used by BIM engineers in project delivery.',
           'Built an MEP annotation toolkit, a multi-category clash detection tool, and a CAD-to-Revit converter.',
@@ -449,9 +784,12 @@ Vue.createApp({
       },
     ],
     projects: [
-      { title: 'DuBox App for Modular Construction', org: 'Group AMANA', tags: ['APS & ACC', 'Web'], desc: 'Production web platform for modular construction, built on APS and deployed on Azure.' },
+      { title: 'AMANA BimOps', org: 'Group AMANA', tags: ['AI', 'APS & ACC', 'Revit'], desc: 'AI operations for Revit and APS: LLM agents connected to the models through MCP integrations, so the team can query and automate BIM work in plain language.' },
+      { title: 'AI Skills & Agents Library', org: 'Group AMANA · R&D', tags: ['AI'], desc: 'A library of reusable AI skills and LLM-powered agents built on Azure AI Foundry, forming the AI infrastructure the R&D unit adopts.' },
       { title: 'AI Bid Package Compiler', org: 'Group AMANA', tags: ['AI', 'Web'], desc: 'AI-assisted tool that compiles bid packages, deployed to production on Azure.' },
-      { title: 'AMANA BimOps', org: 'Group AMANA', tags: ['AI', 'APS & ACC', 'Revit'], desc: 'AI operations for Revit and APS with MCP integrations, plus reusable AI skills and agents for the R&D unit.' },
+      { title: 'DuBox App for Modular Construction', org: 'Group AMANA', tags: ['APS & ACC', 'Web'], desc: 'Production web platform for modular construction, built on APS and deployed on Azure.' },
+      { title: 'Safety App', org: 'Group AMANA', tags: ['Web'], desc: 'Production web app for site safety workflows, deployed on Azure.' },
+      { title: 'APS Viewer Integrations', org: 'Web apps', tags: ['APS & ACC', 'Web'], desc: 'Browser-based model viewing built on the APS Viewer: load and navigate Revit and Navisworks models translated by Model Derivative, and query element data with custom viewer extensions.' },
       { title: 'AMANA APS SDK', org: 'Group AMANA', tags: ['APS & ACC', 'Web'], desc: 'Internal .NET SDK wrapping APS authentication, Data Management, Model Derivative and ACC APIs, reused across the company apps.' },
       { title: 'Add-ins Portal', org: 'Group AMANA', tags: ['Web'], desc: 'Portal that distributes the company Autodesk add-ins to users, deployed on Azure.' },
       { title: 'ACC Toolkit', org: 'Group AMANA', tags: ['APS & ACC'], desc: 'Desktop suite with extensive workflow automation for Autodesk Construction Cloud projects.' },
@@ -460,7 +798,7 @@ Vue.createApp({
       { title: 'ROSHN DRS Application', org: 'Kemet · ROSHN', tags: ['APS & ACC', 'Web'], img: 'ACC.png', desc: 'Document Review Sheet application for ACC projects.' },
       { title: 'ACC Data Migration', org: 'Kemet', tags: ['APS & ACC', 'Web'], desc: 'Transfers metadata from Excel into ACC file attributes in bulk.' },
       { title: 'APS Model Validations', org: 'Kemet', tags: ['APS & ACC', 'Web'], desc: 'Checks models hosted on ACC against project rules using APS model data.' },
-      { title: 'Tech Plus Electrical Designer', org: 'Kemet', tags: ['Revit'], img: 'TechPlusApp.png', desc: 'Create, edit and integrate electrical schematic diagrams directly within Revit.', links: { Demo: drive('1jIi5lvi9CPec00Of6oXSD_WvlU5kgx7J') } },
+      { title: 'Tech Plus Electrical Designer', org: 'Kemet', tags: ['AI', 'Revit'], img: 'TechPlusApp.png', desc: 'Create, edit and integrate electrical schematic diagrams directly within Revit. Uses Azure AI Foundry to suggest the best electrical cable routes.', links: { Demo: drive('1jIi5lvi9CPec00Of6oXSD_WvlU5kgx7J') } },
       { title: 'El-Sewedy Electrical Busway', org: 'Kemet · El-Sewedy', tags: ['Revit'], img: 'ElsewedyRibbon.jpg', desc: 'Models busway systems and prepares fabrication-ready busway ducts with BOM calculation.' },
       { title: 'ROSHN Master Plan Development', org: 'Kemet · ROSHN', tags: ['Civil 3D'], img: 'Roshn.png', desc: 'Automates site and parcel creation, styling from Excel and data export.', links: { Demo: 'https://drive.google.com/drive/folders/1WgLCuFecJ3jTV8rj72IBlpm2kYq04Hau' } },
       { title: 'SAFID Layer Segregator', org: 'Kemet', tags: ['AutoCAD'], img: 'Safied Layer Manager.png', desc: 'Manages and organizes entity layers in AutoCAD drawings.', links: { Demo: drive('1qHDe6iOdPjlvkWz_U38WvC6iic0l0F51') } },
@@ -474,24 +812,40 @@ Vue.createApp({
       { title: 'Angular E-commerce & Web API', org: 'Side project', tags: ['Web'], img: 'Angular.jpg', desc: 'Angular storefront with an ASP.NET Core Web API.', links: { Demo: 'https://youtu.be/-8lTHJ0qqBo', Code: 'https://github.com/AbdElftah99/Ecommerce_Web_API' } },
     ],
     skills: [
-      { name: 'APS (Forge)', icon: '☁', c: '#0f8b7d', items: ['Authentication (OAuth)', 'Data Management', 'Model Derivative', 'Viewer', 'Webhooks'] },
-      { name: 'ACC APIs', icon: '▦', c: '#0f8b7d', items: ['Account Admin', 'Docs', 'Issues', 'RFIs', 'Forms', 'Files Metadata'] },
-      { name: 'Autodesk Desktop', icon: '◧', c: '#2f6fd6', items: ['Revit API', 'Civil 3D API', 'AutoCAD API', 'Navisworks API'] },
-      { name: 'AI', icon: '✦', c: '#e2603d', items: ['Azure AI Foundry', 'LLM Agents', 'AI Assistants', 'MCP'] },
-      { name: 'Backend', icon: '⚙', c: '#6b5bd2', items: ['C#', '.NET', 'ASP.NET Core', 'Entity Framework', 'SQL Server', 'Redis', 'Hangfire', 'RabbitMQ'] },
-      { name: 'Frontend', icon: '◐', c: '#c94170', items: ['TypeScript', 'Angular', 'React', 'Vue.js', 'Tailwind', 'Bootstrap'] },
-      { name: 'Desktop', icon: '▣', c: '#3f8f3f', items: ['WPF', 'MVVM', 'DevExpress', 'Material Design', 'WPF UI'] },
-      { name: 'Cloud & DevOps', icon: '⇪', c: '#c98a12', items: ['Azure App Service', 'Azure Functions', 'Azure DevOps', 'GitHub Actions', 'Docker'] },
-      { name: 'Engineering', icon: '⌂', c: '#8a6a4a', items: ['Synchro 4D', 'Primavera', 'WaterGEMS', 'SewerGEMS'] },
+      { name: 'Computational Design & Geometry', c: '#a9533a', desc: 'Parametric and algorithmic design, and the geometry behind clash checks, offsets and model generation.',
+        items: ['Dynamo', 'Parametric Modelling', 'Revit Geometry API', 'Clipper2', 'CGAL', 'Spatial Indexing', 'Three.js', 'IFC.js', 'GIS & Projections', 'NetTopologySuite'] },
+      { name: 'Autodesk Platform & BIM APIs', c: '#2f69ad', desc: 'Desktop add-ins and cloud integrations across the Autodesk stack and open BIM.',
+        items: ['Revit API', 'Civil 3D API', 'AutoCAD API', 'Navisworks API', 'APS Viewer', 'Model Derivative', 'Design Automation', 'AEC Data Model', 'Data Exchange', 'ACC APIs', 'Webhooks', 'IFC / openBIM'] },
+      { name: 'AI & Automation', c: '#7d5a74', desc: 'LLM agents and assistants that plug into BIM tools and automate real engineering work.',
+        items: ['Azure AI Foundry', 'LLM Agents', 'AI Assistants', 'MCP', 'Tool Calling', 'AI Skills', 'ML.NET'] },
+      { name: 'Software Architecture', c: '#4f6b53', desc: 'Systems that stay maintainable as they grow, with decisions written down.',
+        items: ['Clean Architecture', 'CQRS', 'Domain-Driven Design', 'Modular Monolith', 'Microservices', 'SOLID & Design Patterns', 'System Design', 'ADRs'] },
+      { name: 'Backend, APIs & Data', c: '#56708a', desc: 'Secure APIs, background processing and well-designed data stores.',
+        items: ['C#', '.NET', 'ASP.NET Core', 'REST & OpenAPI', 'Entra ID & OAuth2', 'EF Core', 'SQL Server', 'Database Design', 'Redis', 'RabbitMQ', 'Azure Service Bus', 'Hangfire', 'Worker Services'] },
+      { name: 'Cloud & DevOps', c: '#94681f', desc: 'Production hosting and automated delivery from commit to release.',
+        items: ['Azure App Service', 'Azure Functions', 'Azure Storage', 'Google Cloud', 'Azure DevOps', 'GitHub Actions', 'Docker', 'Kubernetes', 'Terraform', 'Prometheus & Grafana'] },
+      { name: 'Frontend & Desktop', c: '#6f7b3a', desc: 'Web apps and desktop UIs engineers actually enjoy using.',
+        items: ['TypeScript', 'Angular', 'React', 'Vue.js', 'Tailwind', 'WPF', 'MVVM', 'DevExpress', 'Material Design'] },
+      { name: 'Digital Twin & Construction', c: '#a14a3e', desc: 'Connecting models to schedules, sensors and enterprise workflows.',
+        items: ['Autodesk Tandem', 'Azure Digital Twins', 'IoT & MQTT', 'Synchro 4D', 'Primavera P6', 'ServiceNow', 'WaterGEMS', 'SewerGEMS'] },
     ],
     education: [
-      { title: 'B.Sc. Civil Engineering', place: 'Zagazig University · Grade: Good (74%)', when: '2017 – 2022', icon: '🎓', c: '#e2603d' },
-      { title: 'BIM Automation Development', place: 'ITI · Graduation project: Model Inspector', when: '03/2023 – 08/2023', icon: 'I', c: '#c94141' },
-      { title: 'Full Stack .NET + Angular', place: 'Route Academy', when: '03/2024 – 04/2025', icon: 'R', c: '#2f6fd6' },
-      { title: 'Backend .NET Job Simulation Bootcamp', place: 'Upskilling EG', when: '05/2025 – 09/2025', icon: 'U', c: '#0f8b7d' },
+      { title: 'B.Sc. Civil Engineering', place: 'Zagazig University · Grade: Good (74%)', when: '2017 – 2022', icon: 'Z', c: '#b65a3c' },
+      { title: 'BIM Automation Development', place: 'ITI · Graduation project: Model Inspector', when: '03/2023 – 08/2023', icon: 'I', c: '#a14a3e' },
+      { title: 'Full Stack .NET + Angular', place: 'Route Academy', when: '03/2024 – 04/2025', icon: 'R', c: '#3f5f7f' },
+      { title: 'Backend .NET Job Simulation Bootcamp', place: 'Upskilling EG', when: '05/2025 – 09/2025', icon: 'U', c: '#5f7d63' },
     ],
   }),
   computed: {
+    tlStart() { return new Date(2023, 0); },
+    tlYears() { const y = []; for (let k = 2023; k <= this.NOW.getFullYear(); k++) y.push(new Date(k, 0)); return y; },
+    platformCounts() { return this.filters.filter(f => f !== 'All').map(name => ({ name, n: this.count(name) })).sort((a, b) => b.n - a.n); },
+    maxCount() { return Math.max(...this.platformCounts.map(b => b.n)); },
+    matrix() {
+      const orgOf = p => p.org.startsWith('Group AMANA') ? 'AMANA' : p.org.startsWith('Kemet') ? 'Kemet' : p.org.startsWith('Axelerate') ? 'Axelerate' : 'Other';
+      return this.platformCounts.map(b => ({ name: b.name, cells: this.ORGS.map(org => ({ org, n: this.projects.filter(p => p.tags.includes(b.name) && orgOf(p) === org).length })) }));
+    },
+    maxCell() { return Math.max(...this.matrix.flatMap(r => r.cells.map(c => c.n))); },
     shown() {
       const q = this.query.trim().toLowerCase();
       return this.projects.filter(p =>
@@ -503,7 +857,34 @@ Vue.createApp({
     open(p) { document.body.style.overflow = p ? 'hidden' : ''; },
   },
   methods: {
-    color: t => TAG_COLORS[t] || '#e2603d',
+    color: t => TAG_COLORS[t] || '#b65a3c',
+    // wide strips (ribbons), near-square shots or small images would be cropped and upscaled by "cover"
+    // ---- charts ----
+    tlPos(d) { return (d - this.tlStart) / (this.NOW - this.tlStart) * 96; },
+    tlRange(r) { const f = d => d.toLocaleDateString('en-GB', { month: 'short', year: 'numeric' }); return `${f(r.s)} – ${r.e ? f(r.e) : 'present'}`; },
+    tlLen(r) {
+      const e = r.e || this.NOW, m = (e.getFullYear() - r.s.getFullYear()) * 12 + e.getMonth() - r.s.getMonth() + (r.e ? 1 : 0);
+      const y = Math.floor(m / 12), mo = m % 12;
+      return [y && `${y} yr`, mo && `${mo} mo`].filter(Boolean).join(' ') + (r.e ? '' : ' · ongoing');
+    },
+    heatStyle(n) {
+      if (!n) return {};
+      const pct = Math.round(20 + 80 * n / this.maxCell);
+      return { background: `color-mix(in oklab, var(--viz-seq) ${pct}%, var(--solid))`, color: pct > 60 ? 'var(--ink)' : 'var(--text)' };
+    },
+    toggleFilter(name) { this.filter = this.filter === name ? 'All' : name; this.query = ''; },
+    tip(e, title, lines) {
+      const r = e.currentTarget.getBoundingClientRect(), mouse = e.type === 'pointermove';
+      let x = mouse ? e.clientX : r.right, y = mouse ? e.clientY : r.top + r.height / 2;
+      if (x > innerWidth - 280) x -= 290;
+      this.tipState = { x, y, title, lines };
+    },
+    untip() { this.tipState = null; },
+    bgVar: img => ({ '--src': `url("images/${encodeURI(img)}")` }),
+    fit(e) {
+      const img = e.target, box = img.parentElement, r = img.naturalWidth / img.naturalHeight;
+      box.classList.toggle('contain', r > 2.4 || r < 1.3 || img.naturalWidth < box.clientWidth * 1.5);
+    },
     count(f) { return f === 'All' ? this.projects.length : this.projects.filter(p => p.tags.includes(f)).length; },
     toggleTheme() {
       this.dark = !this.dark;
@@ -517,7 +898,7 @@ Vue.createApp({
     },
     flash(msg) { this.toast = msg; clearTimeout(this._t); this._t = setTimeout(() => this.toast = '', 2000); },
     type() {
-      // typewriter: type a role, pause, delete, next role
+      // typewriter: type a skill, pause, delete, next one
       let i = 0, n = 0, del = false;
       const step = () => {
         const word = this.roles[i];
@@ -545,8 +926,8 @@ Vue.createApp({
     this.dark = root.dataset.theme ? root.dataset.theme === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
 
     if (matchMedia('(prefers-reduced-motion: reduce)').matches) {
-      this.typed = this.roles[0];
       this.stats.forEach(s => s.shown = s.value);
+      this.typed = this.roles[0];
     } else { this.type(); this.countUp(); }
 
     addEventListener('scroll', () => {
@@ -562,7 +943,7 @@ Vue.createApp({
 
     const spy = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) this.active = e.target.id; }),
       { rootMargin: '-45% 0px -50% 0px' });
-    this.sections.forEach(s => spy.observe(document.getElementById(s.id)));
+    [...this.sections, ...this.expertise].forEach(s => spy.observe(document.getElementById(s.id)));
   },
 }).mount('#app');
 </script>
